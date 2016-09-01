@@ -14,6 +14,7 @@
 
 import sys
 import os
+from recommonmark.parser import CommonMarkParser
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
@@ -33,8 +34,10 @@ extensions = []
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 
+source_parsers = {'.md': CommonMarkParser}
+
 # The suffix of source filenames.
-source_suffix = '.rst'
+source_suffix = ['.rst', '.md']
 
 # The encoding of source files.
 #source_encoding = 'utf-8-sig'
@@ -44,7 +47,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'meka-docs'
-copyright = u'2016, plueckin'
+copyright = u'2016, pluecking'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
