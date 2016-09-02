@@ -5,6 +5,7 @@
 All values approximate
 
 |Activity|W|A|
+|----------------------|------|------|
 |Idle, both PCs running|~140|~5.2|
 |all motors ready (set to freeze), no z-lift|~165|~6.8|
 |Z-lift ready|~170|~7|
@@ -19,7 +20,8 @@ All values approximate
 
 ## Tested kernels w RTAI
 
-|_.Kernel Vers      |_.Source |_.Status |_.Package | Comment |
+|Kernel Vers        | Source  |Status   |Package | Comment |
+|-------------------|---------|---------|--------|---------|
 | 3.8.13-rtai       | ahoarau | freeze |  |  |
 | 3.8.13 + rtai rc3 | smeyerz | freeze  |  | |
 | 3.8.13 + rtai rc4 | smeyerz | freeze  |  | |
