@@ -16,7 +16,7 @@ Contents:
    api
    ros
    issues
-
+   protocols
 
 
 Indices and tables

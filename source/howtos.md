@@ -184,6 +184,13 @@ student ALL=(root) NOPASSWD:/usr/bin/service
 ```
 This will allow student to launch the m3rt_server without root password.
 
+### Add Realtime support for specific INTEL-Chipset
+
+in /usr/src/linux-headers-3.10.32-rtwar3/include/linux/pci_ids.h define the chipset with the appropriate chipset_id (type lspci -n). E.g. #define PCI_DEVICE_ID_INTEL_H77LPC 0x1e4a
+in the RTAI source, go to ./base/arch/$YOUR_ARCHITECTURE/calibration and edit smi-module.c. Add the previously defined pci device to the pci_device_id struct. E.g. { PCI_DEVICE(PCI_VENDOR_ID_INTEL, PCI_DEVICE_ID_INTEL_H77LPC) }
+build the modules and install
+
+
 ## Recording
 
 ### M3rec (new): Record in a .txt file
