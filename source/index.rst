@@ -16,6 +16,7 @@ Contents:
    api
    ros
    issues
+   controlit
 
 
 
