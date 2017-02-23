@@ -16,8 +16,8 @@ Contents:
    api
    ros
    issues
+   protocols
    controlit
-
 
 
 Indices and tables
